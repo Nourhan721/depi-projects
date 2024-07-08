@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link href="stylesheet.css" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Cruds</title>
+</head>
+<body>
+    <h1> Movie Dairy </h1>
+    <div class="form">
+        <div>
+            <label for="name">Movie Name :</label>
+            <input type="text" id="name" >
+        </div>
+        <div>
+            <label for="year">Realse Year :</label>
+            <input type="number" id="year">
+        </div>
+        <div>
+            <label for="genre">Genre :</label>
+            <input type="text"  id="genre">
+        </div>
+        <div>
+            <button type="submit" onclick="addMovie()" id="add"> Add </button>
+        </div>
+    </div>
+    <div class="container">
+        <input type="search" placeholder="search by name" name="search" id="search">
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="showData"></tbody>
+        </table>
+    </div>
+
+
+
+    <script src='main.js'></script>
+</body>
+</html>
